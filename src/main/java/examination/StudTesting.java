@@ -34,7 +34,7 @@ public class StudTesting {
 		
 		System.out.println("Iveskite testo, kuri norite laikyti, nr.:");
 		for (Test test: testAll) {
-			System.out.println("Klausimo nr: ["+test.getNr()+"] " + test.getName());
+			System.out.println("Testo nr: ["+test.getNr()+"] " + test.getName());
 		}
 		int modNr = sc.nextInt();
 		sc.nextLine();
