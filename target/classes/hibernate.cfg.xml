@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "hibernate-configuration-3.0.dtd" >
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost/emp</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">123,123</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
+
+        <property name="show_sql">true</property>
+
+        <mapping class="examination.Test" />
+        <mapping class="examination.Question" />
+        <mapping class="examination.Answer" />
+        <mapping class="examination.Student" />
+        <mapping class="examination.Testing" />
+        <mapping class="examination.Admin" />
+
+<!--        <mapping class="model.Darbuotojas" />-->
+<!--        <mapping class="model.Irankis" />-->
+<!--        <mapping class="model.Darbas" />-->
+<!--        <mapping class="model.Miestas" />-->
+
+    </session-factory>
+</hibernate-configuration>
